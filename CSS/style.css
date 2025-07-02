@@ -67,7 +67,7 @@ main {
     justify-content: center;
 }
 
-img{
+.parte2 img{
     display: flex;
     float:right;
     height: 80vh; 
@@ -89,6 +89,7 @@ img{
     justify-content: center;
     padding: 15px 0;
 }
+
 
 .parte3{
     background-color: rgba(128, 128, 128,0.4);
@@ -113,4 +114,49 @@ img{
     padding: 40px;
     margin: 30px;
     line-height: 25px;
+}
+
+.parte4 img {
+    margin: 15px 0;
+    height: 50vh;
+    width: 100vw;
+    filter: grayscale(100%);
+} 
+
+
+.parte5 {
+    background-image: url(../Images/foto-main-3.jpg);
+    height: 50vh;
+}
+
+.parte5 h2 {
+    font-size: 40px;
+    width: 15vw;
+    padding: 40px 30px;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.parte5 p{
+    justify-self: center;
+    align-self: center;
+} 
+
+.parte5 button{
+    margin: 25px 0;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
+    align-self: flex-end; 
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(15, 191, 250);
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+} 
+
+button:hover{
+    transform: scale(1.1);
 }
