@@ -8,6 +8,8 @@
      "wdth" 50;
 }
 
+/* --------------------------------------- inicio  header ---------------------------- */
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +36,11 @@ nav:hover{
     
 } 
 
+.redes i:hover{
+    color: turquoise;
+    cursor: pointer;
+} 
+
 .menu2{
     display: flex;
     flex-wrap: wrap;
@@ -43,16 +50,17 @@ nav:hover{
     padding: 15px 30px;
 }
 
-i:hover{
-    color: turquoise;
-    cursor: pointer;
-} 
+/* --------------------------------------- fin  header ---------------------------- */
+
+
+
+/* --------------------------------------- inicio main ---------------------------- */
 
 main {
     background-color: rgb(255, 255, 255);
 }
 
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ inicio hero ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .hero{
     color: white;
     text-transform: uppercase;
@@ -66,28 +74,51 @@ main {
     justify-content: center;
 }
 
-.parte2 img{
-    display: flex;
-    float:right;
-    height: 80vh; 
-    padding: 40px 20px;
-    margin: 0 50px 0 0;
-}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ fin hero ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ inicio parte 2 texto con foto al lado ~~~~~~~~~~~~~~~~~ */
+
 
 .parte2 {
-    max-width: 500px;
+    display: flex;
+}
+
+.parte2 img{
+    display: flex;
+    justify-self:flex-end;
+    height: 85vh; 
+    padding: 50px 0;
+    padding-right: 50px;
+    
+}
+
+.parte2 div {
     padding: 25px 50px;
     margin: 40px 45px;
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
+   
 }
 
 .parte2 h2 {
 
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
     padding: 15px 0;
 }
+
+.parte2 p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ fin parte 2 texto con foto al lado ~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ inicio parte 3 , los 2 textos en medio ~~~~~~~~~~~~~~~~~ */
 
 
 .parte3{
@@ -115,12 +146,23 @@ main {
     line-height: 25px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ fin parte 3 , los 2 textos en medio ~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ inicio parte 4 , las 4 fotos ~~~~~~~~~~~~~~~~~ */
+
 .parte4 img {
     margin: 15px 0;
     height: 50vh;
     width: 100vw;
     filter: grayscale(100%);
 } 
+
+/* ~~~~~~~~~~~~~~~~~~~~ fin parte 4 , las 4 fotos ~~~~~~~~~~~~~~~~~ */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ inicio parte 5 , texto y botón ~~~~~~~~~~~~~~~~~ */
 
 
 .parte5 {
@@ -139,6 +181,8 @@ main {
 .parte5 p{
     justify-self: center;
     align-self: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 } 
 
 .parte5 button{
@@ -160,33 +204,121 @@ button:hover{
     transform: scale(1.1);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ fin parte 5 , texto y botón ~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ inicio parte 6, redes y formulario correo ~~~~~~~~~~~~~~~~~ */
+
+.parte6 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(46, 46,56,1) ;
+    color: white;
+} 
+
+.parte6 div {
+    max-width: 400px;
+    padding: 55px;
+}
+
+.parte6 h3{
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.parte6 p{
+    padding: 5px 0;
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+.parte6 button {
+    font-size: 25px;
+    gap: 50px;
+    color: rgba(156, 156, 156, 0.8);
+    background-color:  rgba(46, 46, 56,0.9) ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-style: none;
+}
+
+.formulario-correo {
+    border: solid rgb(79, 79, 82) 10px;
+   max-width: 300px;
+}
+
+.formulario-correo p {
+    align-self: flex-start;
+    justify-self: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+input[type="email"]{
+   background-color:  rgba(46, 46, 56,0.9);
+   padding: 15px 20px;
+   color: white;
+   border: solid rgb(79, 79, 82) 5px;
+
+}
+
+
+input[type="button"]{
+    font-size: 15px;
+    color: white;
+    background-color: rgb(15, 191, 250);
+    padding: 15px 75px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-style: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ fin parte 6, redes y formulario correo ~~~~~~~~~~~~~~~~~ */
+
+/* --------------------------------------- inicio footer ---------------------------- */
+
+
 footer{
-    background-color: rgb(46, 46, 56);
-    height: 5vh;
+    background-color: rgba(46, 46, 56,0.8);
     color: white;
     display: flex;
     flex-wrap: wrap;
     text-transform: capitalize;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 footer p {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
+    margin-left: 10px;
 }
 
-footer li {
+footer ul {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+   
 }
 
-ul:hover{
+li:hover{
     color: turquoise;
     cursor: pointer;
 } 
 
-ul::after {
-
+li::marker{
+    color: rgb(15, 191, 250);
 }
+
+li:first-child {
+    list-style: none;
+}
+
+/* --------------------------------------- fin footer ---------------------------- */
+
+
